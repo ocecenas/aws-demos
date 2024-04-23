@@ -12,6 +12,11 @@ yes | sudo apt install git
 # Install Node JS and packages
 yes | sudo apt install nodejs
 yes | sudo apt install npm
+
+# Install dependencies
+echo "Installing dependencies"
+npm i express
+npm i body-parser
 npm install pm2 -g
 
 # Clone website code
@@ -20,11 +25,6 @@ mkdir -p /demo-website
 cd /demo-website
 git clone https://github.com/ocecenas/aws-demos.git .
 cd dynamic-website-scaling
-
-# Install dependencies
-echo "Installing dependencies"
-npm install
-
 
 # Forward port 80 traffic to port 3000
 echo "Forwarding 80 -> 3000"
