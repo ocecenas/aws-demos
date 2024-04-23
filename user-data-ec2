@@ -19,9 +19,8 @@ nvm install --lts
 echo "Cloning website"
 mkdir -p /demo-website
 cd /demo-website
-git clone https://github.com/ocecenas/aws-ec2-webserver.git .
-cd ec2-website-scaling-test
-
+git clone https://github.com/academind/aws-demos.git .
+cd dynamic-website-scaling
 
 # Install dependencies
 echo "Installing dependencies"
