@@ -16,9 +16,9 @@ yes | sudo apt install npm
 
 # Install dependencies
 echo "Installing dependencies"
-npm i express
-npm i body-parser
-npm install pm2 -g
+sudo npm i express
+sudo npm i body-parser
+sudo npm install pm2 -g
 
 # Clone website code
 echo "Cloning website"
