@@ -22,6 +22,7 @@ cd /demo-website
 git clone https://github.com/ocecenas/aws-ec2-webserver.git .
 cd ec2-website-scaling-test
 
+
 # Install dependencies
 echo "Installing dependencies"
 npm install
