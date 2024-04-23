@@ -28,6 +28,9 @@ sudo npm i express
 sudo npm i body-parser
 sudo npm install pm2 -g
 
+#Sleep 5 Seconds
+sleep 5
+
 # Forward port 80 traffic to port 3000
 echo "Forwarding 80 -> 3000"
 sudo sysctl net.ipv4.ip_forward=1
@@ -36,6 +39,9 @@ sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 # sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
 # sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination localhost:3000
 # sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+
+#Sleep 5 Seconds
+sleep 5
 
 # Install & use pm2 to run Node app in background
 sudo node app.js
