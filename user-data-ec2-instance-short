@@ -23,9 +23,9 @@ sudo npm install pm2 -g
 
 # Clone website code
 echo "Cloning website"
-mkdir -p /demo-website
-cd /demo-website
-git clone https://github.com/ocecenas/aws-demos.git .
+sudo mkdir -p ~/demo-website
+cd ~/demo-website
+sudo git clone https://github.com/ocecenas/aws-demos.git .
 cd dynamic-website-scaling
 
 # Forward port 80 traffic to port 3000
