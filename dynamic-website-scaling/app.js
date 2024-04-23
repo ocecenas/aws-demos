@@ -7,6 +7,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
+
+
 app.get('/', async function (req, res) {
   let dummyData;
   for (let i = 0; i < 5000; i++) {
@@ -23,3 +25,5 @@ app.post('/data', async function (req, res) {
 });
 
 app.listen(3000);
+
+console.log("Webapp Started, Listening on Port 3000")
