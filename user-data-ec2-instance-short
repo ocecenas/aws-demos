@@ -37,8 +37,5 @@ sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 # sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination localhost:3000
 # sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 
-
-
-
 # Install & use pm2 to run Node app in background
 sudo node app.js
