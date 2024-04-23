@@ -14,3 +14,13 @@ yes | sudo apt install nodejs
 yes | sudo apt install npm
 
 npm install pm2 -g
+
+
+
+
+# Forward port 80 traffic to port 3000
+echo "Forwarding 80 -> 3000"
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
+
+# Install & use pm2 to run Node app in background
+yes | sudo node app.js
