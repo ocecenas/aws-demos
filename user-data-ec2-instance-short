@@ -31,8 +31,8 @@ sudo npm install pm2 -g
 # Forward port 80 traffic to port 3000
 echo "Forwarding 80 -> 3000"
 sysctl net.ipv4.ip_forward=1
-sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination localhost:3000
-sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination localhost:3000
+# sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 
 
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
