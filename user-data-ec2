@@ -20,7 +20,7 @@ echo "Cloning website"
 mkdir -p /demo-website
 cd /demo-website
 git clone https://github.com/ocecenas/aws-demos.git .
-cd ec2-website-scaling-test
+cd dynamic-website-scaling
 
 # Install dependencies
 echo "Installing dependencies"
